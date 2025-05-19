@@ -1,17 +1,40 @@
 <style>
+    .pageContainer
+    {
+        padding-left: 173px;
+        padding-right: 173px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    body {
+        font-family: sans-serif;
+        color: black;
+    }
     header
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+    h1
+    {
+        font-size: 28px;
+    }
     nav ul{
         list-style: none;
         display: flex;  
         gap: 20px;
+        font-size: 18px;
     }
-
+    nav ul li:last-child a {
+    color: #4856DF;
+    font-weight: bold;
+    }
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
     .mainSection1{
         display: flex;
     }
@@ -19,46 +42,81 @@
     .mainSection2{
         display: flex; 
     }
+    h2
+    {
+        font-size: 66px;
+    }
+    .girlWorkingImg
+    {
+        width: 662px;
+        height: 551px;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+    h3
+    {
+        font-size: 22px;
+    }
+    h4
+    {
+        font-size: 14px;
+    }
+    button
+    {
+        font-size: 18px;
+    }
+    .btn1
+    {
+        background-color: #4856DF;
+        border-radius: 12px;
+        color: white;
+        width: 160px;
+        height: 62px;
+    }
 </style>
-<header>
-    <h1>
-        <a href="#">Happy Home</a>
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Try now</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section class="mainSection1">
-        <section>
-        <h2>Learn the best ways for staying productive</h2>
-        <p>Working at home is definitely a convenient option and makes sense in these unprecedented times.</p>
-        <button>Get Tips</button>
-        <button>
-            <img src="" alt="playBtn" />
-            Learn More
-        </button>
+<div class="pageContainer">
+    <header>
+        <h1>
+            <a href="#">Happy Home</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Try now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mainSection1">
+            <section>
+            <h2>Learn the best ways for staying productive</h2>
+            <p>Working at home is definitely a convenient option and makes sense in these unprecedented times.</p>
+            <button class="btn1">Get Tips</button>
+            <button>
+                <img src="" alt="playBtn" />
+                Learn More
+            </button>
+            </section>
+            <img src="Image.svg" alt="girlWorkingImg" class="girlWorkingImg"/>
         </section>
-        <img src="Image.svg" alt="girlWorkingImg" />
-    </section>
-    <section class="mainSection2">
-        <article>
-            <h3>Work-Life Balance</h3>
-            <p>Many remote jobs also come with flexible schedules, which means that workers can start and end their day as they choose.</p>
-        </article>
-        <article>
-            <h3>Work Anywhere</h3>
-            <p>Having access to a broader range of job opportunities that aren't limited by geographic location. This can be especially helpful.</p>
-        </article>
-        <article>
-            <h3>Improved Inclusivity</h3>
-            <p>Remote work enables companies to embrace diversity and inclusion by hiring people from different backgrounds.</p>
-        </article>
-    </section>
-</main>
+        <section class="mainSection2">
+            <article>
+                <h3>Work-Life Balance</h3>
+                <h4>Many remote jobs also come with flexible schedules, which means that workers can start and end their day as they choose.</p>
+            </article>
+            <article>
+                <h3>Work Anywhere</h3>
+                <h4>Having access to a broader range of job opportunities that aren't limited by geographic location. This can be especially helpful.</p>
+            </article>
+            <article>
+                <h3>Improved Inclusivity</h3>
+                <h4>Remote work enables companies to embrace diversity and inclusion by hiring people from different backgrounds.</p>
+            </article>
+        </section>
+    </main>
+</div>
