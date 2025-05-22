@@ -66,14 +66,19 @@
     button
     {
         font-size: 18px;
+        border-radius: 12px;
+        border: 0;
     }
     .btn1
     {
         background-color: #4856DF;
-        border-radius: 12px;
         color: white;
         width: 160px;
         height: 62px;
+    }
+    .mainButtons{
+        display: flex;
+        gap: 3px;
     }
 </style>
 <div class="pageContainer">
@@ -96,11 +101,13 @@
             <section>
             <h2>Learn the best ways for staying productive</h2>
             <p>Working at home is definitely a convenient option and makes sense in these unprecedented times.</p>
-            <button class="btn1">Get Tips</button>
-            <button>
-                <img src="" alt="playBtn" />
-                Learn More
-            </button>
+            <section class="mainButtons">
+                <button class="btn1">Get Tips</button>
+                <button>
+                    <img src="" alt="playBtn" />
+                    Learn More
+                </button>
+            </section>
             </section>
             <img src="Image.svg" alt="girlWorkingImg" class="girlWorkingImg"/>
         </section>
